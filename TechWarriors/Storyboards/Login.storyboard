@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K4d-xe-Vtz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Museo500-Regular.otf">
+            <string>Museo-500</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="00E-fm-L8x">
+            <objects>
+                <viewController id="K4d-xe-Vtz" customClass="LoginViewController" customModule="TechWarriors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BpN-Co-tbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-Wy-8Ef">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.0" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with User Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-sG-aT5">
+                                <rect key="frame" x="102" y="120" width="171.5" height="24"/>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbG-ES-1Bm" customClass="TextField" customModule="TechWarriors" customModuleProvider="target">
+                                <rect key="frame" x="20" y="174" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kNl-VS-Bzl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.BorderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="K4d-xe-Vtz" id="1YM-g5-8ZR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W40-7Y-uKh" customClass="TextField" customModule="TechWarriors" customModuleProvider="target">
+                                <rect key="frame" x="20" y="234" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MLP-ue-k70"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.BorderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="K4d-xe-Vtz" id="50c-aP-LLX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmm-kE-2k8">
+                                <rect key="frame" x="129.5" y="304" width="116" height="29"/>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="14"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.792156862745098" green="0.0" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPasswordTapped" destination="K4d-xe-Vtz" eventType="touchUpInside" id="kEp-kp-SaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jx-XI-PHj">
+                                <rect key="frame" x="20" y="353" width="335" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Tc-ly-j8R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="18"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTapped" destination="K4d-xe-Vtz" eventType="touchUpInside" id="kez-qm-wcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwK-wH-A6P">
+                                <rect key="frame" x="311" y="240" width="34" height="28"/>
+                                <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="13"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTapped" destination="K4d-xe-Vtz" eventType="touchUpInside" id="gMK-F9-RmB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mbG-ES-1Bm" firstAttribute="leading" secondItem="cRE-38-h91" secondAttribute="leading" constant="20" id="Bht-Vf-JhL"/>
+                            <constraint firstItem="cRE-38-h91" firstAttribute="trailing" secondItem="uxd-Wy-8Ef" secondAttribute="trailing" id="Is4-J2-4PG"/>
+                            <constraint firstItem="cRE-38-h91" firstAttribute="trailing" secondItem="W40-7Y-uKh" secondAttribute="trailing" constant="20" id="MqV-49-kgs"/>
+                            <constraint firstItem="bmm-kE-2k8" firstAttribute="centerX" secondItem="cRE-38-h91" secondAttribute="centerX" id="Plh-ZH-0Es"/>
+                            <constraint firstItem="FwK-wH-A6P" firstAttribute="trailing" secondItem="W40-7Y-uKh" secondAttribute="trailing" constant="-10" id="SOP-gZ-YVC"/>
+                            <constraint firstItem="mbG-ES-1Bm" firstAttribute="top" secondItem="iIH-sG-aT5" secondAttribute="bottom" constant="30" id="ThJ-d2-M3b"/>
+                            <constraint firstItem="iIH-sG-aT5" firstAttribute="centerX" secondItem="cRE-38-h91" secondAttribute="centerX" id="Zdu-5F-ID6"/>
+                            <constraint firstItem="W40-7Y-uKh" firstAttribute="leading" secondItem="cRE-38-h91" secondAttribute="leading" constant="20" id="cis-Vz-p3j"/>
+                            <constraint firstItem="3jx-XI-PHj" firstAttribute="leading" secondItem="cRE-38-h91" secondAttribute="leading" constant="20" id="e4t-aX-laG"/>
+                            <constraint firstItem="bmm-kE-2k8" firstAttribute="top" secondItem="W40-7Y-uKh" secondAttribute="bottom" constant="30" id="e6c-xi-GJ5"/>
+                            <constraint firstItem="3jx-XI-PHj" firstAttribute="top" secondItem="bmm-kE-2k8" secondAttribute="bottom" constant="20" id="emi-PH-w45"/>
+                            <constraint firstItem="cRE-38-h91" firstAttribute="trailing" secondItem="mbG-ES-1Bm" secondAttribute="trailing" constant="20" id="fEc-bT-b5u"/>
+                            <constraint firstItem="uxd-Wy-8Ef" firstAttribute="top" secondItem="BpN-Co-tbc" secondAttribute="top" id="fiO-PA-ugl"/>
+                            <constraint firstItem="uxd-Wy-8Ef" firstAttribute="leading" secondItem="cRE-38-h91" secondAttribute="leading" id="nzz-3F-I8d"/>
+                            <constraint firstItem="W40-7Y-uKh" firstAttribute="top" secondItem="mbG-ES-1Bm" secondAttribute="bottom" constant="20" id="oyq-vx-AUG"/>
+                            <constraint firstItem="FwK-wH-A6P" firstAttribute="centerY" secondItem="W40-7Y-uKh" secondAttribute="centerY" id="pYu-L6-Zyd"/>
+                            <constraint firstItem="cRE-38-h91" firstAttribute="trailing" secondItem="3jx-XI-PHj" secondAttribute="trailing" constant="20" id="vdP-BI-sJ8"/>
+                            <constraint firstItem="uxd-Wy-8Ef" firstAttribute="bottom" secondItem="cRE-38-h91" secondAttribute="top" id="xm3-xw-K8Q"/>
+                            <constraint firstItem="iIH-sG-aT5" firstAttribute="top" secondItem="cRE-38-h91" secondAttribute="top" constant="100" id="xpm-EZ-1jr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cRE-38-h91"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="3jx-XI-PHj" id="2pZ-nr-U3I"/>
+                        <outlet property="passwordTxt" destination="W40-7Y-uKh" id="R9l-vx-Jrr"/>
+                        <outlet property="showBtn" destination="FwK-wH-A6P" id="u7q-dQ-zUq"/>
+                        <outlet property="usernameTxt" destination="mbG-ES-1Bm" id="og5-0x-YUw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPM-6d-l2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="61"/>
+        </scene>
+    </scenes>
+</document>
