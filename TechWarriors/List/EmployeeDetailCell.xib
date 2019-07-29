@@ -28,49 +28,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPh-d8-wQM">
-                                <rect key="frame" x="10" y="10" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="15" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
                                 <color key="textColor" red="0.94509803920000002" green="0.62352941179999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llb-tN-PZm">
-                                <rect key="frame" x="10" y="40.5" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="45" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdW-rE-sfk">
-                                <rect key="frame" x="10" y="71" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="75" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywS-5b-fPa">
-                                <rect key="frame" x="10" y="101.5" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="105" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-6k-GIF">
-                                <rect key="frame" x="10" y="132" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="135" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-6X-fwn">
-                                <rect key="frame" x="10" y="162.5" width="43" height="20.5"/>
+                                <rect key="frame" x="10" y="165" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="Museo-500" family="Museo" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.050000000000000003" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4kj-6k-GIF" firstAttribute="trailing" secondItem="ywS-5b-fPa" secondAttribute="trailing" id="7M7-wK-ba0"/>
                             <constraint firstItem="mPh-d8-wQM" firstAttribute="trailing" secondItem="Llb-tN-PZm" secondAttribute="trailing" id="9Jv-lf-yzK"/>
                             <constraint firstItem="ywS-5b-fPa" firstAttribute="leading" secondItem="E9e-3d-Zbj" secondAttribute="leading" constant="10" id="K4H-Tg-H5Q"/>
                             <constraint firstItem="AdW-rE-sfk" firstAttribute="leading" secondItem="E9e-3d-Zbj" secondAttribute="leading" constant="10" id="Pel-Gc-k5K"/>
                             <constraint firstItem="y0W-6X-fwn" firstAttribute="top" secondItem="4kj-6k-GIF" secondAttribute="bottom" constant="10" id="SA7-tV-48R"/>
-                            <constraint firstItem="mPh-d8-wQM" firstAttribute="top" secondItem="E9e-3d-Zbj" secondAttribute="top" constant="10" id="Vsz-K8-qkY"/>
+                            <constraint firstItem="mPh-d8-wQM" firstAttribute="top" secondItem="E9e-3d-Zbj" secondAttribute="top" constant="15" id="Vsz-K8-qkY"/>
                             <constraint firstItem="AdW-rE-sfk" firstAttribute="trailing" secondItem="ywS-5b-fPa" secondAttribute="trailing" id="adX-ta-Ckt"/>
                             <constraint firstItem="4kj-6k-GIF" firstAttribute="top" secondItem="ywS-5b-fPa" secondAttribute="bottom" constant="10" id="baf-Bb-j0I"/>
                             <constraint firstItem="Llb-tN-PZm" firstAttribute="trailing" secondItem="AdW-rE-sfk" secondAttribute="trailing" id="cu0-7e-djX"/>
