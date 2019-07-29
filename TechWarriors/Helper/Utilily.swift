@@ -34,6 +34,26 @@ class Utilily: NSObject {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let tabbarController = storyboard.instantiateInitialViewController()
         window.rootViewController = tabbarController
+        setDefaultSetting()
+    }
+    
+    class func setDefaultSetting() {
+        //Settings
+        if Preferences.shared().getPreference(key: notificationKey) == nil {
+            Preferences.shared().setPreference(value: NSNumber(value: true), key: notificationKey)
+        }
+        if Preferences.shared().getPreference(key: notificationAfterLogoutKey) == nil {
+            Preferences.shared().setPreference(value: NSNumber(value: true), key: notificationAfterLogoutKey)
+        }
+        if Preferences.shared().getPreference(key: alarmKey) == nil {
+            Preferences.shared().setPreference(value: NSNumber(value: true), key: alarmKey)
+        }
+        if Preferences.shared().getPreference(key: locationKey) == nil {
+            Preferences.shared().setPreference(value: NSNumber(value: true), key: locationKey)
+        }
+        if Preferences.shared().getPreference(key: locationKey) == true {
+            //LocationManager.shared().start()
+        }
     }
     
     class func colorFromHexString (hex:String) -> UIColor {

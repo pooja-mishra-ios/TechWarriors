@@ -34,4 +34,11 @@ class Preferences: NSObject {
         UserDefaults.standard.removeObject(forKey:key)
         UserDefaults.standard.synchronize()
     }
+    
+    func getPreference(key: String) -> Bool {
+        if let value : NSNumber = UserDefaults.standard.value(forKey: key) as? NSNumber {
+            return value.boolValue
+        }
+        return false
+    }
 }

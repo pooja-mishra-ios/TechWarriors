@@ -30,7 +30,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         return sharedLocationManager
     }
     
-    func launch() {
+    func start() {
         if manager == nil {
             manager = CLLocationManager()
             manager.delegate = self
@@ -54,8 +54,15 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        manager.stopUpdatingLocation()
+        stop()
         print("Error \(error)")
+    }
+    
+    func stop() {
+        if manager != nil {
+            currentLocation = nil
+            manager.stopUpdatingLocation()
+        }
     }
 
 }
